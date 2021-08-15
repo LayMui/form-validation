@@ -14,19 +14,19 @@
     <h3>Registration form</h3>
 
     Username : <input type = "text" placeholder = "Your username" 
-               name = "uname">
+    data-testid="username-input name = "uname">
                <label id = "unameLabel" style="color: red; visibility : hidden;">Username should have a minimum of 6 characters</label> <br>  
             <br><br>
 
-    Age : <input type = "number" name = "age" required><br><br>
+    Age : <input type = "number" data-testid="age-input" name = "age" required><br><br>
 
-    Residency : <input type = "radio" name = "residency" value = "resident" checked>            Resident
-                <input type = "radio" name = "residency" value = "nonresident">Non-resident
+    Residency : <input type = "radio" data-testid="residency-input-01" name = "residency" value = "resident" checked>            Resident
+                <input type = "radio" data-testid="residency-input-02" name = "residency" value = "nonresident">Non-resident
                 <br><br>
 
-    Select accounts : <input type = "checkbox" name = "acctype" value = "savings">                  Savings
-                      <input type = "checkbox" name = "acctype" value = "checking" checked>Checking
-                      <input type = "checkbox" name = "acctype" value = "mmarket">Money Market  
+    Select accounts : <input type = "checkbox" data-testid="acctype-input-01" name = "acctype" value = "savings">                  Savings
+                      <input type = "checkbox" data-testid="acctype-input-02" name = "acctype" value = "checking" checked>Checking
+                      <input type = "checkbox" data-testid="acctype-input-03" name = "acctype" value = "mmarket">Money Market  
                       <br><br>
 
     Nationality : <select id="nationality">
@@ -39,8 +39,8 @@
                   </select>   
                   <br><br>
 
-    <input type="submit" name = "forms" value="Submit">
-    <input type="reset" name = "forms" value="Reset">
+    <input type="submit" name = "forms" data-testid="submit" value="Submit">
+    <input type="reset" name = "forms" data-testid="reset" value="Reset">
     </form>
 
     <script src="JSFormsValidation.js"> </script>
